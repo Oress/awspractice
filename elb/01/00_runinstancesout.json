@@ -1,0 +1,135 @@
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-07caf09b362be10b8",
+            "InstanceId": "i-0fb74808184fee8f6",
+            "InstanceType": "t2.small",
+            "KeyName": "test",
+            "LaunchTime": "2024-05-11T14:48:16+00:00",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1d",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-93-42.ec2.internal",
+            "PrivateIpAddress": "172.31.93.42",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-0a3cd0c2a62694bf6",
+            "VpcId": "vpc-0f8c4caa54f431f32",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "b047ad98-0a04-4832-a836-d09653bff549",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2024-05-11T14:48:16+00:00",
+                        "AttachmentId": "eni-attach-0b73cd3b5aa01352e",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "ingress_http_all",
+                            "GroupId": "sg-0f49bf7f2faf92eb8"
+                        },
+                        {
+                            "GroupName": "SSH_sg_from_anywhere",
+                            "GroupId": "sg-020d0b6bf5b898fd9"
+                        },
+                        {
+                            "GroupName": "egress_all",
+                            "GroupId": "sg-074c4771bb2362c9c"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "12:4d:c4:7a:8f:63",
+                    "NetworkInterfaceId": "eni-02a296b4178f86e00",
+                    "OwnerId": "450346197415",
+                    "PrivateDnsName": "ip-172-31-93-42.ec2.internal",
+                    "PrivateIpAddress": "172.31.93.42",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-93-42.ec2.internal",
+                            "PrivateIpAddress": "172.31.93.42"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-0a3cd0c2a62694bf6",
+                    "VpcId": "vpc-0f8c4caa54f431f32",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "ingress_http_all",
+                    "GroupId": "sg-0f49bf7f2faf92eb8"
+                },
+                {
+                    "GroupName": "SSH_sg_from_anywhere",
+                    "GroupId": "sg-020d0b6bf5b898fd9"
+                },
+                {
+                    "GroupName": "egress_all",
+                    "GroupId": "sg-074c4771bb2362c9c"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "required",
+                "HttpPutResponseHopLimit": 2,
+                "HttpEndpoint": "enabled",
+                "HttpProtocolIpv6": "disabled",
+                "InstanceMetadataTags": "disabled"
+            },
+            "EnclaveOptions": {
+                "Enabled": false
+            },
+            "BootMode": "uefi-preferred",
+            "PrivateDnsNameOptions": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+            },
+            "MaintenanceOptions": {
+                "AutoRecovery": "default"
+            },
+            "CurrentInstanceBootMode": "legacy-bios"
+        }
+    ],
+    "OwnerId": "450346197415",
+    "ReservationId": "r-0d6734b9b294d1ccc"
+}

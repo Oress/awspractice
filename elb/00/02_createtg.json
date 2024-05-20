@@ -1,0 +1,25 @@
+{
+    "TargetGroups": [
+        {
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:450346197415:targetgroup/tg-00/b2b577e0aff4cd17",
+            "TargetGroupName": "tg-00",
+            "Protocol": "HTTP",
+            "Port": 80,
+            "VpcId": "vpc-0f8c4caa54f431f32",
+            "HealthCheckProtocol": "HTTP",
+            "HealthCheckPort": "80",
+            "HealthCheckEnabled": true,
+            "HealthCheckIntervalSeconds": 30,
+            "HealthCheckTimeoutSeconds": 5,
+            "HealthyThresholdCount": 5,
+            "UnhealthyThresholdCount": 2,
+            "HealthCheckPath": "/",
+            "Matcher": {
+                "HttpCode": "200"
+            },
+            "TargetType": "instance",
+            "ProtocolVersion": "HTTP1",
+            "IpAddressType": "ipv4"
+        }
+    ]
+}

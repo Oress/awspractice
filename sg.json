@@ -1,0 +1,207 @@
+{
+    "SecurityGroups": [
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0b655441f74cdbe65",
+                            "UserId": "450346197415"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-0b655441f74cdbe65",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-028690406e17841b2"
+        },
+        {
+            "Description": "Allows all ingress traffic to port 80",
+            "GroupName": "ingress_http_all",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-0f49bf7f2faf92eb8",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "SSH_sg_from_anywhere",
+            "GroupName": "SSH_sg_from_anywhere",
+            "IpPermissions": [
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-020d0b6bf5b898fd9",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "allow all egress traffic",
+            "GroupName": "egress_all",
+            "IpPermissions": [],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-074c4771bb2362c9c",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-094d0ce51e99721f7",
+                            "UserId": "450346197415"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-094d0ce51e99721f7",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "EFS demo",
+            "GroupName": "efs-demo",
+            "IpPermissions": [
+                {
+                    "FromPort": 2049,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2049,
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0277537163f451b71",
+                            "UserId": "450346197415"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-0b90b1b99ff837d9b",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "launch-wizard-1 created 2023-12-27T20:03:07.876Z",
+            "GroupName": "launch-wizard-1",
+            "IpPermissions": [
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-087ac72ce4feb2afa",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        },
+        {
+            "Description": "ec2_instance_efs",
+            "GroupName": "ec2_instance_efs",
+            "IpPermissions": [],
+            "OwnerId": "450346197415",
+            "GroupId": "sg-0277537163f451b71",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0f8c4caa54f431f32"
+        }
+    ]
+}

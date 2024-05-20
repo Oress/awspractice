@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://mydbinstance.c3qoq2oga4tx.us-east-1.rds.amazonaws.com:5432/postgres}
+    username: ${DB_USER:rootuser}
+    password: ${DB_PWD:myrootpwd}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    ddl-auto: create-drop
+    show-sql: true
+  redis:
+    database: 0
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    password: mypass
+    timeout: 60000
+    
+
