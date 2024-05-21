@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "s1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:List*",
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:GetObjectAttributes"
+            ],
+            "Resource": [
+                "arn:aws:s3:::awspractice-name01",
+                "arn:aws:s3:::awspractice-name01/*"
+            ]
+        }
+    ]
+}
