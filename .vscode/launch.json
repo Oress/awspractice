@@ -6,6 +6,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Debug Consumer with SQS properties",
+            "request": "launch",
+            "mainClass": "org.ipan.awspractice.sqs.consumer.ConsumerApplication",
+            "projectName": "consumer",
+            "vmArgs": [
+                "-Dsqs.queue.name=basic-q",
+                "-Dsqs.region=us-east-1"
+            ]
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "org.ipan.Main",

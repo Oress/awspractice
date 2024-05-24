@@ -28,7 +28,7 @@ public class MessageReceiver {
     private final SqsClient sqsClient;
     private final String queueUrl;
 
-    public MessageReceiver(SqsClient sqsClient, @Value(value = "sqs.queue.name") String queueName) {
+    public MessageReceiver(SqsClient sqsClient, @Value(value = "${sqs.queue.name}") String queueName) {
         this.sqsClient = sqsClient;
         GetQueueUrlResponse response = sqsClient.getQueueUrl(GetQueueUrlRequest.builder().queueName(queueName).build());
         this.queueUrl = response.queueUrl();
@@ -59,12 +59,13 @@ public class MessageReceiver {
             deleteRequestEntries.add(DeleteMessageBatchRequestEntry.builder().id(message.messageId())
                     .receiptHandle(message.receiptHandle()).build());
         }
-
-        try {
-            logger.info("Sending Delete batch... ");
-            sqsClient.deleteMessageBatch(b -> b.queueUrl(queueUrl).entries(deleteRequestEntries));
-        } catch (SqsException e) {
-            logger.error("Failed to send delete batch ", e);
+        if (!deleteRequestEntries.isEmpty()) {
+            try {
+                logger.info("Sending Delete batch... ");
+                sqsClient.deleteMessageBatch(b -> b.queueUrl(queueUrl).entries(deleteRequestEntries));
+            } catch (SqsException e) {
+                logger.error("Failed to send delete batch ", e);
+            }
         }
     }
 }
