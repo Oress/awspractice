@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Use case 00. Basic Scenario producer --> queue --> consumer
-# 1. create queue
-# 2. write a producer that sends messages to the queue
+# X 1. create queue
+# X 2. write a producer that sends messages to the queue
 # 3. write a consumer that reads messages from the queue
 # 4. build them and upload to the s3
 # 5. run a ec2 instances with the consumer and producer. Give them the permission to read the package from s3. 
