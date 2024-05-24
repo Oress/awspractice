@@ -13,8 +13,7 @@
         {
             "Effect": "Allow",
             "Action": [
-                "sqs:ReceiveMessage",
-                "sqs:DeleteMessage",
+                "sqs:SendMessage",
                 "sqs:GetQueueUrl"
             ],
             "Resource": [
