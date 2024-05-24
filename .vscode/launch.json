@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CustomMetricsApplication",
+            "request": "launch",
+            "mainClass": "org.ipan.cloudwatch.custom_metrics.CustomMetricsApplication",
+            "projectName": "custom-metrics"
+        },
+        {
+            "type": "java",
             "name": "Debug Consumer with SQS properties",
             "request": "launch",
             "mainClass": "org.ipan.awspractice.sqs.consumer.ConsumerApplication",
